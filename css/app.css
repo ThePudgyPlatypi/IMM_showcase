@@ -1,0 +1,29 @@
+.hide {
+  
+}
+
+/*header styling */
+
+ul {
+  list-style: none;
+}
+
+/*menu styling */
+.menu-centered {
+  background-color: #e5e5e5;
+  padding-top: 5px;
+}
+
+.menu a {
+  color: black;
+}
+
+.menu li {
+  border-right: 1px solid black;
+}
+
+.menu li:last-child {
+  border: none;
+}
+
+/*body styling*/
