@@ -10,31 +10,40 @@
   </head>
   <body>
     <div id="container">
-
       <!-- This is the top header -->
       <div class="row">
-        <div class="columns small-12 large-8">
-          <h1 >IMM Senior Showcase <span class="CHANGE">2017</span></h1>
+        <div class="columns small-8 large-text-left medium-text-center small-text-center">
+          <a href="http://www.tcnj.edu">
+            <img class="image" src="./images/HorizontalWordmarkBlue480.png" alt="The College of New Jersey Logo" />
+          </a>
+          <h1>IMM Senior Showcase <span class="CHANGE">2017</span></h1>
         </div>
-        <div class="columns small-12 large-4 text-right">
+        <div class="columns small-4">
           <!-- Senior showcase date -->
-          <ul>
-            <li id="date">
-              <span class="CHANGE">April 28th, 2017</span>
-            </li>
-            <li id="time">
-              <span class="CHANGE">6:00-9:00PM</span>
-            </li>
-            <li id="place">
-              <span class="CHANGE">IMM Building</span>
-            </li>
-          </ul>
+          <div class="show-information-container">
+            <ul class="show-information">
+              <li id="date">
+                <span class="CHANGE">April 28th, 2017</span>
+              </li>
+              <li id="time">
+                <span class="CHANGE">6:00-9:00PM</span>
+              </li>
+              <li id="place">
+                <span class="CHANGE">IMM Building</span>
+              </li>
+            </ul>
+            <div class="right-triangle">
+            </div>
+            <div class="left-triangle">
+            </div>
+          </div>
+
         </div>
       </div>
-      <div class="row">
-        <div class="columns small-12 large-12">
-          <p>Meet the inventive students and experience the bright ideas illuminating the Class of <span class="CHANGE">2017</span>
-            in the Interactive Multimedia department at the College of New Jersey</p>
+      <div class="row expanded" id="about">
+        <div class="columns small-12 large-12 text-center">
+          <p>Meet the inventive students of the Class of <span class="CHANGE">2017</span> in the Interactive Multimedia
+            department at the College of New Jersey and experience their bright ideas in the Senior Showcase.</p>
           </p>
         </div>
       </div>
@@ -46,7 +55,7 @@
       <!-- add 'class="example"' to all the content you wanted displayed. -->
       <div class="title-bar" data-responsive-toggle="menu-toggle" data-hide-for="medium">
         <button class="menu-icon" type="button" data-toggle="menu-toggle"></button>
-        <div class="title-bar-title">Menu</div>
+        <div class="title-bar-title" data-toggle="menu-toggle">Menu</div>
       </div>
 
       <div class="menu-centered" id="menu-toggle">
@@ -82,45 +91,198 @@
       </div>
 
       <!-- MAIN CONTENT -->
-      <div class="row large-up-5 medium-up-3 small-up-2">
-        <div class="column column-block item web">
-          <img src="http://placehold.it/350x350" class="thumbnail" alt="">
+      <div class="row large-up-5 medium-up-3 small-up-2" id="student-projects">
+        <div class="column column-block item video">
+          <a href="#" data-open="student-name-1"><!--data-open + unique id-->
+            <div class="card">
+              <div class="card-divider">
+                <h2 class="project-title"><span class="CHANGE">This is a project title</span></h2>
+                <p class="project-name"><span class="CHANGE">Name Here</span></p>
+              </div>
+              <div class="card-section">
+                <img src="http://placehold.it/350x350" class="thumbnail" alt="">
+              </div>
+            </div>
+          </a>
+
+          <!-- this is the popout lightbox. if need be I have stored this code in a seperate html file -->
+          <!-- You will need to have an id for EACH student so maybe just use their names and have it populate that way -->
+          <!-- add the id to the .popout-container and then throw data-reveal="that-id-you-just-made" into the <a> that wraps -->
+          <!-- the whole card -->
+          <div class="popout-container large reveal" id="student-name-1" data-reveal>
+
+            <button class="close-button" data-close aria-label="Close modal" type="button">
+              <span aria-hidden="true">&times;</span>
+            </button>
+
+            <div class="row">
+              <div class="column small-12 medium-4">
+                <img src="http://placehold.it/250x250" class="creator-image" alt="Project Creator">
+                <h2 class="creator-name">Person's Name</h2>
+                <p class="creator-room-number">Room <span class="CHANGE">203</span></p>
+                <ul class="creator-links">
+                  <li><a href="#">facebook</a></li>
+                  <li><a href="#">email</a></li>
+                  <li><a href="#">website</a></li>
+                </ul>
+              </div>
+              <div class="column small-12 medium-8">
+                <h1 class="creator-project">This Guy's Project</h1>
+                <p class="creator-project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <div class="row large-up-3 small-up-1">
+                  <div class="column column-block">
+                    <img src="http://placehold.it/400x200" alt="project image" />
+                  </div>
+                  <div class="column column-block">
+                    <img src="http://placehold.it/600x200" alt="project image" />
+                  </div>
+                  <div class="column column-block">
+                    <img src="http://placehold.it/200x200" alt="project image" />
+                  </div>
+                  <div class="column column-block">
+                    <img src="http://placehold.it/375x600" alt="project image" />
+                  </div>
+                  <div class="column column-block">
+                    <img src="http://placehold.it/400x400" alt="project image" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end lightbox -->
         </div>
-        <div class="column column-block item web">
-          <img src="http://placehold.it/350x350" class="thumbnail" alt="">
+
+        <div class="column column-block item animation">
+          <a href="#" data-open="student-name-1">
+            <div class="card">
+              <div class="card-divider">
+                <h2><span class="CHANGE project-title">This is a project title</span></h2>
+                <p><span class="CHANGE project-name">Name Here</span></p>
+              </div>
+              <div class="card-section">
+                <img src="http://placehold.it/350x350" class="thumbnail" alt="">
+              </div>
+            </div>
+          </a>
+          <!-- this is the popout lightbox. if need be I have stored this code in a seperate html file -->
+          <!-- You will need to have an id for EACH student so maybe just use their names and have it populate that way -->
+          <div class="popout-container large reveal" id="student-name-2" data-reveal>
+
+            <button class="close-button" data-close aria-label="Close modal" type="button">
+              <span aria-hidden="true">&times;</span>
+            </button>
+
+            <div class="row">
+              <div class="column small-12 medium-4">
+                <img src="http://placehold.it/250x250" class="creator-image" alt="Project Creator">
+                <h2 class="creator-name">Person's Name</h2>
+                <p class="creator-room-number">Room <span class="CHANGE">203</span></p>
+                <ul class="creator-links">
+                  <li><a href="#">facebook</a></li>
+                  <li><a href="#">email</a></li>
+                  <li><a href="#">website</a></li>
+                </ul>
+              </div>
+              <div class="column small-12 medium-8">
+                <h1 class="creator-project">This Guy's Project</h1>
+                <p class="creator-project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <div class="row large-up-3 small-up-1">
+                  <div class="column column-block">
+                    <img src="http://placehold.it/400x200" alt="project image" />
+                  </div>
+                  <div class="column column-block">
+                    <img src="http://placehold.it/600x200" alt="project image" />
+                  </div>
+                  <div class="column column-block">
+                    <img src="http://placehold.it/200x200" alt="project image" />
+                  </div>
+                  <div class="column column-block">
+                    <img src="http://placehold.it/375x600" alt="project image" />
+                  </div>
+                  <div class="column column-block">
+                    <img src="http://placehold.it/400x400" alt="project image" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end lightbox -->
         </div>
-        <div class="column column-block item mobile">
-          <img src="http://placehold.it/350x350" class="thumbnail" alt="">
+
+        <div class="column column-block item computing">
+          <a href="#">
+            <div class="card">
+              <div class="card-divider">
+                <h2><span class="CHANGE project-title">This is a project title</span></h2>
+                <p><span class="CHANGE project-name">Name Here</span></p>
+              </div>
+              <div class="card-section">
+                <img src="http://placehold.it/350x350" class="thumbnail" alt="">
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="column column-block item games">
+          <a href="#">
+            <div class="card">
+              <div class="card-divider">
+                <h2><span class="CHANGE project-title">This is a project title</span></h2>
+                <p><span class="CHANGE project-name">Name Here</span></p>
+              </div>
+              <div class="card-section">
+                <img src="http://placehold.it/350x350" class="thumbnail" alt="">
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="column column-block item games">
+          <a href="#">
+            <div class="card">
+              <div class="card-divider">
+                <h2><span class="CHANGE project-title">This is a project title</span></h2>
+                <p><span class="CHANGE project-name">Name Here</span></p>
+              </div>
+              <div class="card-section">
+                <img src="http://placehold.it/350x350" class="thumbnail" alt="">
+              </div>
+            </div>
+          </a>
         </div>
         <div class="column column-block item performance">
-          <img src="http://placehold.it/350x350" class="thumbnail" alt="">
+          <a href="#">
+            <div class="card">
+              <div class="card-divider">
+                <h2><span class="CHANGE project-title">This is a project title</span></h2>
+                <p><span class="CHANGE project-name">Name Here</span></p>
+              </div>
+              <div class="card-section">
+                <img src="http://placehold.it/350x350" class="thumbnail" alt="">
+              </div>
+            </div>
+          </a>
         </div>
-        <div class="column column-block item music">
-          <img src="http://placehold.it/350x350" class="thumbnail" alt="">
-        </div>
-        <div class="column column-block item video">
-          <img src="http://placehold.it/350x350" class="thumbnail" alt="">
-        </div>
-        <div class="column column-block item animation">
-          <img src="http://placehold.it/350x350" class="thumbnail" alt="">
-        </div>
-        <div class="column column-block item computing">
-          <img src="http://placehold.it/350x350" class="thumbnail" alt="">
-        </div>
-        <div class="column column-block item computing">
-          <img src="http://placehold.it/350x350" class="thumbnail" alt="">
-        </div>
-        <div class="column column-block item games">
-          <img src="http://placehold.it/350x350" class="thumbnail" alt="">
-        </div>
-        <div class="column column-block item computing">
-          <img src="http://placehold.it/350x350" class="thumbnail" alt="">
-        </div>
-        <div class="column column-block item music">
-          <img src="http://placehold.it/350x350" class="thumbnail" alt="">
-        </div>
-        <div class="column column-block item games">
-          <img src="http://placehold.it/350x350" class="thumbnail" alt="">
+        <div class="column column-block item performance">
+          <a href="#">
+            <div class="card">
+              <div class="card-divider">
+                <h2><span class="CHANGE project-title">This is a project title</span></h2>
+                <p><span class="CHANGE project-name">Name Here</span></p>
+              </div>
+              <div class="card-section">
+                <img src="http://placehold.it/350x350" class="thumbnail" alt="">
+              </div>
+            </div>
+          </a>
         </div>
       </div>
     </div>

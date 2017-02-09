@@ -1,29 +1,121 @@
-.hide {
-  
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+html, body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2 {
+  font-family: 'Open Sans', sans-serif;
+  color: #293f6f;
+}
+
+h2 {
+  font-size: 1.2em;
 }
 
 /*header styling */
 
-ul {
+.show-information-container {
+  position: relative;
+  z-index: -2;
+  float: right;
+  padding: 10px 10px 0 0;
+  color: #4e4e4e;
+  /*width: 10em;*/
+  background-color: #FCBC12;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d19a10+0,edaf12+3,fcbc12+6,fcbc12+100 */
+  background: rgb(209,154,16); /* Old browsers */
+  background: -moz-linear-gradient(top,  rgba(209,154,16,1) 0%, rgba(237,175,18,1) 3%, rgba(252,188,18,1) 6%, rgba(252,188,18,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(209,154,16,1) 0%,rgba(237,175,18,1) 3%,rgba(252,188,18,1) 6%,rgba(252,188,18,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgba(209,154,16,1) 0%,rgba(237,175,18,1) 3%,rgba(252,188,18,1) 6%,rgba(252,188,18,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d19a10', endColorstr='#fcbc12',GradientType=0 ); /* IE6-9 */
+  box-shadow: 0 0 30px #c4c4c4;
+}
+
+.right-triangle, .left-triangle {
+  position: absolute;
+  z-index: -1;
+  width: 0;
+  height: 0;
+  border-bottom: 3em solid transparent;
+}
+
+.right-triangle {
+  border-left: 5em solid #FCBC12;
+  bottom: -3em;
+  left: 0;
+}
+
+.left-triangle {
+  border-right: 5em solid #FCBC12;
+  bottom: -3em;
+  right: 0;
+}
+
+.show-information {
   list-style: none;
+  line-height: 1.5em;
+}
+
+#about {
+  background-color: #293f6f;
+  color: #fff;
+  padding-top: 10px;
+}
+
+.image {
+  margin-right: 100px;
 }
 
 /*menu styling */
 .menu-centered {
   background-color: #e5e5e5;
-  padding-top: 5px;
+  padding-top: 8px;
+  border-top: 1px solid #d6d6d6;
+  border-bottom: 1px solid #d6d6d6;
+  margin-bottom: 10px;
 }
 
 .menu a {
-  color: black;
+  color: #4e4e4e;
+}
+
+.menu a:hover {
+  color: #4a85b9;
 }
 
 .menu li {
-  border-right: 1px solid black;
+  border-right: 1px solid #d6d6d6;
 }
 
 .menu li:last-child {
   border: none;
 }
 
+.title-bar {
+  /*background-color: #e5e5e5;
+  color: #4e4e4e;*/
+}
+
 /*body styling*/
+#student-projects {
+  margin-top: 0.5em;
+}
+
+/*popout styling*/
+.popout-container {
+  padding-top: 20px;
+}
+
+.creator-name {
+  font-size: 2em;
+}
+
+.creator-links {
+  margin: 0;
+  padding: 0;
+}
+
+.creator-links li {
+  list-style: none;
+}

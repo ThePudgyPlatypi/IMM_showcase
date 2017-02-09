@@ -1030,7 +1030,8 @@ button {
     position: static;
     float: left;
     margin-right: 0;
-    margin-left: 0; } }
+    margin-left: 0; }
+}
 
 @media print, screen and (min-width: 64em) {
   .large-1 {
@@ -3642,7 +3643,8 @@ a.thumbnail {
     clear: both; }
   .title-bar .menu-icon {
     margin-left: 0.25rem;
-    margin-right: 0.25rem; }
+    margin-right: 0.25rem;
+  }
 
 .title-bar-left {
   float: left; }
